@@ -19,11 +19,7 @@ This project processes scanned or digital loan application documents, extracts r
 2. Runs OCR to extract raw text.
 3. Uses regex to identify and extract structured fields.
 4. Applies an eligibility rule:
-   ```python
-   if salary >= 25000 and loan_amt <= (salary * 10):
-       status = "Eligible"
-   else:
-       status = "Not Eligible"
+   
 pip install opencv-python pytesseract pandas
 python loan_doc_ocr_extractor.py synthetic_dataset
 
